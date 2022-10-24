@@ -1,0 +1,12 @@
+html,   body{
+    align-items: center;
+    align-self:flex-start;
+    text-align: center;
+    background-color: rgb(57, 60, 59);
+}
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+}
