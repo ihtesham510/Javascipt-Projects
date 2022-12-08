@@ -514,30 +514,64 @@ video {
 }
 
 .div {
-  display: flex;
+  display: grid;
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #334155;
-  --tw-gradient-to: rgb(51 65 85 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #000;
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+  text-align: center;
 }
 
-.k {
-  padding: 0.25rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 800;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.header {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
-  .k {
-    padding: 0.75rem;
+  .header {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+.div2 {
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .div2 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+.start , .reset {
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(5rem * var(--tw-space-x-reverse));
+  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+@media (min-width: 768px) {
+  .btn > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
